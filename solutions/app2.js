@@ -27,7 +27,7 @@ const cookieHandler = {
   },
   flush() {
     for (let prop in this.getAll()) {
-      setCookie(prop, '', -1);
+      this.setCookie(prop, '', -1);
     }
   },
   toSessionStorage() {
